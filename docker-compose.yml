@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  terraform-ubuntu:
+    image: terraform-ubuntu
+    volumes:
+      - ./local/variables.tfvars:/home/ubuntu/IaC-intro/local/variables.tfvars
+      - ./creds:/home/ubuntu/IaC-intro/creds
